@@ -1,0 +1,60 @@
+#Projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font-size: 50px;
+    letter-spacing: 7px;
+    margin-bottom: 50px;
+    color: black;
+  }
+  .singleProject {
+    display: flex;
+    width: 80%;
+    background-image: linear-gradient(315deg, #a7a6a6 0%, #242424 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px 0;
+    .description {
+      padding: 0px 50px;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      h2 {
+        font-size: 40px;
+      }
+      button {
+        padding: 7px 15px;
+        font-size: 18px;
+        background-color: transparent;
+
+        border: 2px solid white;
+        margin: 20px 30px 10px 0;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        &:hover {
+          background-color: rgb(48, 47, 47);
+          color: rgb(245, 35, 35);
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .project-img {
+      .project-logo {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
