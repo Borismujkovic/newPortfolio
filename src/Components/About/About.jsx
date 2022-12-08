@@ -7,6 +7,7 @@ export const About = (props) => {
   return (
     <Element name="about">
       <div id="About">
+        <h1 className="h1">About</h1>
         <div className="about-containter">
           <div class="frame">
             <img className="profile-img" src={image} alt="" />

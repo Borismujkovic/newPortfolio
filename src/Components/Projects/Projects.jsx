@@ -35,6 +35,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/HR-lab"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Live
                 </a>
@@ -43,6 +44,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/HR-lab"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   GitHub
                 </a>
@@ -58,7 +60,7 @@ export const Projects = () => {
             <img className="project-logo" src={FoodOrder} alt="" />
           </div>
           <div className="description">
-            <h2>FoodOrderApp</h2>
+            <h2>FoodOrder App</h2>
             <h3>
               An application that serves for ordering food, written in React.js,
               as one of the practices for developing my skills.
@@ -68,6 +70,7 @@ export const Projects = () => {
                 <a
                   href="https://food-order-react-rho.vercel.app/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Live
                 </a>
@@ -76,6 +79,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/FoodOrderReact"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   GitHub
                 </a>
@@ -92,7 +96,7 @@ export const Projects = () => {
             </h3>
             <div>
               <button>
-                <a href="https://top-tvs-how-react.vercel.app/" target="_blank">
+                <a href="https://top-tvs-how-react.vercel.app/" target="_blank" rel="noreferrer">
                   Live
                 </a>
               </button>
@@ -100,6 +104,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/TopTVShow-React"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   GitHub
                 </a>
@@ -122,7 +127,7 @@ export const Projects = () => {
             </h3>
             <div>
               <button>
-                <a href="https://bit-show-js.vercel.app/" target="_blank">
+                <a href="https://bit-show-js.vercel.app/" target="_blank" rel="noreferrer">
                   Live
                 </a>
               </button>
@@ -130,6 +135,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/TopTVShow-JS"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   GitHub
                 </a>
@@ -149,6 +155,7 @@ export const Projects = () => {
                 <a
                   href="https://js-projects-28tq0xewx-borismujkovic.vercel.app/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Live
                 </a>
@@ -157,6 +164,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/JSProjects"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   GitHub
                 </a>
@@ -179,7 +187,7 @@ export const Projects = () => {
             </h3>
             <div>
               <button>
-                <a href="https://lbs-intern.vercel.app/" target="_blank">
+                <a href="https://lbs-intern.vercel.app/" target="_blank" rel="noreferrer">
                   Live
                 </a>
               </button>
@@ -187,6 +195,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Borismujkovic/LBS-intern"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   GitHub
                 </a>

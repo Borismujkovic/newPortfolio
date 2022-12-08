@@ -1,17 +1,19 @@
 #About {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .h1 {
+    font-size: 50px;
+    letter-spacing: 7px;
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+  }
   .about-containter {
     padding: 40px;
     border-radius: 20px;
-    width: 50%;
+    width: 100%;
     background-color: white;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     .profile-img {
       height: 400px;
@@ -36,6 +38,32 @@
       }
       h2 {
         font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #About {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .about-containter {
+      .about-section {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 577px) and (max-device-width: 1100px) {
+  #About {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .about-containter {
+      .about-section {
+        width: 100%;
       }
     }
   }
