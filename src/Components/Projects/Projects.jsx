@@ -96,7 +96,11 @@ export const Projects = () => {
             </h3>
             <div>
               <button>
-                <a href="https://top-tvs-how-react.vercel.app/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://top-tvs-how-react.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live
                 </a>
               </button>
@@ -127,7 +131,11 @@ export const Projects = () => {
             </h3>
             <div>
               <button>
-                <a href="https://bit-show-js.vercel.app/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://bit-show-js.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live
                 </a>
               </button>
@@ -187,7 +195,11 @@ export const Projects = () => {
             </h3>
             <div>
               <button>
-                <a href="https://lbs-intern.vercel.app/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://lbs-intern.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live
                 </a>
               </button>

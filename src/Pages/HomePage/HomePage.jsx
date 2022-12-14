@@ -12,7 +12,6 @@ export const HomePage = () => {
   return (
     <div id="HomePage">
       <div className="snow"></div>
-
       <Header />
       <Home />
       <Technologies />

@@ -1,10 +1,32 @@
+import * as TbIcons from "react-icons/tb";
+import * as AiIcons from "react-icons/ai";
+
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import { useState } from "react";
 import "./Header.scss";
 
-export const Header = (props) => {
+export const Header = () => {
   const [header, setHeader] = useState(false);
+  const [isOpened, setIsOpened] = useState(true);
+  const [hamburger, setHamburger] = useState("hamburger");
+  const [navMenu, setNavMenu] = useState("nav-menu");
+
+  const open = () => {
+    setIsOpened(!isOpened);
+    if (isOpened) {
+      setHamburger("hamburger active");
+      setNavMenu("nav-menu active");
+    } else {
+      setHamburger("hamburger");
+      setNavMenu("nav-menu");
+    }
+  };
+
+  const close = () => {
+    setHamburger("hamburger");
+    setNavMenu("nav-menu");
+  };
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -17,26 +39,82 @@ export const Header = (props) => {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <div id={header ? "active" : "Header"}>
+    <div id={header ? "Active" : "Header"}>
       <h1>
-        <span>B</span>ORIS <span>M</span>UJKOVIC
+        <span className="span">B</span>ORIS <span className="span">M</span>
+        UJKOVIC
       </h1>
-      <div className="nav">
-        <Link to="home" spy={true} smooth={true} duration={500}>
-          <button>HOME</button>
-        </Link>
-        <Link to="tech" spy={true} smooth={true} duration={500}>
-          <button>TECH</button>
-        </Link>
-        <Link to="projects" spy={true} smooth={true} duration={500}>
-          <button>PROJECTS</button>
-        </Link>
-        <Link to="about" spy={true} smooth={true} duration={1000}>
-          <button>ABOUT</button>
-        </Link>
-        <Link to="contact" spy={true} smooth={true} duration={1000}>
-          <button>CONTACT</button>
-        </Link>
+      <ul className={navMenu}>
+        <li className="nav-item">
+          <AiIcons.AiOutlineHome />
+          <Link
+            to="home"
+            className="nav-link"
+            onClick={close}
+            spy={true}
+            smooth={true}
+            duration={800}
+          >
+            HOME
+          </Link>
+        </li>
+        <li className="nav-item">
+          <AiIcons.AiOutlineTool />
+          <Link
+            to="tech"
+            className="nav-link"
+            onClick={close}
+            spy={true}
+            smooth={true}
+            duration={800}
+          >
+            TECH
+          </Link>
+        </li>
+        <li className="nav-item">
+          <AiIcons.AiOutlineFundProjectionScreen />
+          <Link
+            to="projects"
+            className="nav-link"
+            onClick={close}
+            spy={true}
+            smooth={true}
+            duration={800}
+          >
+            PROJECTS
+          </Link>
+        </li>
+        <li className="nav-item">
+          <TbIcons.TbMan />
+          <Link
+            to="about"
+            className="nav-link"
+            onClick={close}
+            spy={true}
+            smooth={true}
+            duration={800}
+          >
+            ABOUT
+          </Link>
+        </li>
+        <li className="nav-item">
+          <AiIcons.AiOutlinePhone />
+          <Link
+            to="contact"
+            className="nav-link"
+            onClick={close}
+            spy={true}
+            smooth={true}
+            duration={800}
+          >
+            CONTACT
+          </Link>
+        </li>
+      </ul>
+      <div className={hamburger} onClick={open}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
     </div>
   );
