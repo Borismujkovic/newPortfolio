@@ -33,7 +33,6 @@
       background-image: linear-gradient(to right, #434343 0%, black 100%);
       color: white;
       h1 {
-        font-size: 50px;
         text-align: center;
       }
       h2 {
@@ -45,6 +44,9 @@
 
 @media screen and (max-width: 576px) {
   #About {
+    .h1 {
+      font-size: 35px;
+    }
     display: flex;
     flex-direction: column;
     width: 100%;
